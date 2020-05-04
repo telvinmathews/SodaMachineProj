@@ -19,7 +19,7 @@ namespace SodaMachine
         }
         //member methods (can do)
 
-        public void AcceptsCoinPayment()
+        public void AcceptsCoinPayment(List<Coin> coins)
         {
 
         }
@@ -27,6 +27,13 @@ namespace SodaMachine
         public void ReturnsCoin() //add return type?? Coin ??
         {
            // return ;
+        }
+
+        public void DisplayCurrentInventoryWithPrice()
+        {
+            Console.WriteLine("Gape Soda in Inventory: " + Inventory.GrapeSodas.Count);
+            Console.WriteLine("Orange Soda in Inventory: " + Inventory.OrangeSodas.Count);
+            Console.WriteLine("Lemon Soda in Inventory: " + Inventory.LemonSodas.Count);
         }
     }
 }

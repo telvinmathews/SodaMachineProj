@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Quarter
+    class Quarter : Coin
     {
         //member variables (has a)
-        public double value;
         //construtor (spawn)
         public Quarter()
         {

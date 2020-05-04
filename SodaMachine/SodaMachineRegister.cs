@@ -12,6 +12,7 @@ namespace SodaMachine
         public List<Dime> Dimes;
         public List<Nickel> Nickels;
         public List<Penny> Pennies;
+        public double CurrentTotal;
 
         public SodaMachineRegister()
         {

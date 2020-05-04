@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class LemonSoda
+    class LemonSoda : Can
     {
+        public LemonSoda()
+        {
+            Value = .6;
+        }
     }
 }

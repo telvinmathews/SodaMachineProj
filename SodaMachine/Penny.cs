@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Penny
+    class Penny : Coin
     {
+        //member variables (has a)
+        //construtor (spawn)
+        public Penny()
+        {
+            value = .1;
+        }
+        //member methods (can do)
     }
 }

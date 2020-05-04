@@ -10,6 +10,9 @@ namespace SodaMachine
     {
         static void Main(string[] args)
         {
+            CanSodaMachine canSodaMachine = new CanSodaMachine();
+            canSodaMachine.DisplayCurrentInventoryWithPrice();
+            Console.ReadLine();
         }
     }
 }

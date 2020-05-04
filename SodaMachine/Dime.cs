@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Dime
+    class Dime : Coin
     {
         //member variables (has a)
-        public double value;
-
         //construtor (spawn)
         public Dime()
         {
