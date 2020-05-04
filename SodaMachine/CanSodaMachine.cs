@@ -9,12 +9,13 @@ namespace SodaMachine
     class CanSodaMachine
     {
         //member variables (has a)
-        public List<Coin> Coins;
         public Inventory Inventory;
+        public SodaMachineRegister Register;
         //construtor (spawn)
         public CanSodaMachine()
         {
             Inventory = new Inventory();
+            Register = new SodaMachineRegister();
         }
         //member methods (can do)
 
