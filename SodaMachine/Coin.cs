@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Dime
+    abstract class Coin
     {
-        //member variables (has a)
         public double value;
 
-        //construtor (spawn)
-        public Dime()
+        public Coin()
         {
-            value = .10;
+
         }
-        //member methods (can do)
     }
 }
