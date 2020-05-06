@@ -21,12 +21,15 @@ namespace SodaMachine
         //member methods (can do)
 
 
-        public void AcceptsCoinPayment(List<Coin> coins)
+        public double AcceptsCoinPayment(List<Coin> coins, Coin coin, Can can)
         {
             for (int i = 0; i < coins.Count; i++)
             {
-                //
-               // TempCoinRegister = 
+                TempCoinRegister = coin.value;
+                if (TempCoinRegister < can.Value)
+                {
+                    return TempCoinRegister;
+                }
             }
         }
 
