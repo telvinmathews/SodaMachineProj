@@ -37,14 +37,11 @@ namespace SodaMachine
         //if user pay more than the value of the soda 
         // machine give back the differnce in avalivable coins
 
+       
         public void DisplayUserAvailibleMoney()
         {
             Console.WriteLine("You have: " + "$" + Wallet.Money + " in cash availible");
         }
-
-       
-
-
         public void BuySoda(double transactionAmount)
         {
             Wallet.Money -= transactionAmount;

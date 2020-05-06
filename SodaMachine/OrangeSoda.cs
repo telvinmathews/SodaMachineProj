@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public OrangeSoda()
         {
-            Value = .35;
+            Value = 0.35;
         }
     }
 }

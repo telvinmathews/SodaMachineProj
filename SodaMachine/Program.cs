@@ -10,9 +10,16 @@ namespace SodaMachine
     {
         static void Main(string[] args)
         {
-            CanSodaMachine canSodaMachine = new CanSodaMachine();
-            canSodaMachine.DisplayCurrentInventoryWithPrice();
-            Console.ReadLine();
+            GrapeSoda grape = new GrapeSoda();
+            OrangeSoda orangeSoda = new OrangeSoda();
+            LemonSoda lemonSoda = new LemonSoda();
+            //Customer customer = new Customer();
+            //CanSodaMachine canSodaMachine = new CanSodaMachine();
+            //customer.DisplayUserAvailibleMoney();
+            //canSodaMachine.DisplayCurrentInventoryWithPrice(grape, orangeSoda, lemonSoda);
+            //Console.ReadLine();
+            Simulation simulation = new Simulation();
+            simulation.RunSimulation(grape, orangeSoda, lemonSoda);
         }
     }
 }

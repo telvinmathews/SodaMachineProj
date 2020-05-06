@@ -11,6 +11,7 @@ namespace SodaMachine
         //member variables (has a)
         public Inventory Inventory;
         public SodaMachineRegister Register;
+        public double TempCoinRegister;
         //construtor (spawn)
         public CanSodaMachine()
         {
@@ -19,9 +20,14 @@ namespace SodaMachine
         }
         //member methods (can do)
 
+
         public void AcceptsCoinPayment(List<Coin> coins)
         {
-
+            for (int i = 0; i < coins.Count; i++)
+            {
+                //
+               // TempCoinRegister = 
+            }
         }
 
         public void ReturnsCoin() //add return type?? Coin ??
@@ -29,8 +35,12 @@ namespace SodaMachine
            // return ;
         }
 
-        public void DisplayCurrentInventoryWithPrice()
+        public void DisplayCurrentInventoryWithPrice(GrapeSoda grape, OrangeSoda orangeSoda, LemonSoda lemonSoda)
         {
+            //Why does C# not print zero at the behinde the decimal point
+            Console.WriteLine($"Gape cost:  ${grape.Value} cents");
+            Console.WriteLine($"Organge cost:  ${orangeSoda.Value} cents");
+            Console.WriteLine($"Lemon cost: ${lemonSoda.Value} cents");
             Console.WriteLine("Gape Soda in Inventory: " + Inventory.GrapeSodas.Count);
             Console.WriteLine("Orange Soda in Inventory: " + Inventory.OrangeSodas.Count);
             Console.WriteLine("Lemon Soda in Inventory: " + Inventory.LemonSodas.Count);

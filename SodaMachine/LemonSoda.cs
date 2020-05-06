@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public LemonSoda()
         {
-            Value = .6;
+            Value = 0.06;
         }
     }
 }

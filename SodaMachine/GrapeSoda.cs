@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         public GrapeSoda()
         {
-            Value = .60;
+            Value = 0.60;
         }
     }
 }
